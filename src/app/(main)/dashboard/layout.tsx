@@ -10,7 +10,6 @@ interface DashboardLayoutProps {
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
-    <ConvexClientProvider>
     <main className="h-full">
       <Sidebar />
       <div className="pl-[60px] h-full">
@@ -23,7 +22,6 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         </div>
       </div>
       </main>
-      </ConvexClientProvider>
   );
 };
 

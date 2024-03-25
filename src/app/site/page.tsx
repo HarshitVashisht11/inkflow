@@ -1,7 +1,3 @@
-import { Check } from "lucide-react";
-import {Button} from '@/components/ui/button'
-import clsx from "clsx";
-import Link from "next/link";
 import Image from 'next/image'
 import Navigation from "../_components/navbar";
 export default async function Home() {
