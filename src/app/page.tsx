@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navigation from "../_components/navbar";
+import Navigation from "./_components/navbar";
 export default async function Home() {
   return (
     <>
