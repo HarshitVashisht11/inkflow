@@ -1,7 +1,6 @@
 import { Sidebar } from "./_components/sidebar";
 import { OrgSidebar } from "./_components/org-sidebar";
 import {Navbar} from "./_components/navbar";
-import { ClerkProvider } from "@clerk/nextjs";
 import { ConvexClientProvider } from "@/providers/convex-client-provider";
 
 interface DashboardLayoutProps {
@@ -10,6 +9,7 @@ interface DashboardLayoutProps {
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
+    <ConvexClientProvider>
     <main className="h-full">
       <Sidebar />
       <div className="pl-[60px] h-full">
@@ -22,6 +22,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
         </div>
       </div>
       </main>
+      </ConvexClientProvider>
   );
 };
 
