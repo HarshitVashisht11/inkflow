@@ -4,7 +4,7 @@ import 'tldraw/tldraw.css'
 const Canvas = () => {
   return (
     <div style={{ position: 'fixed', inset: 0 }}>
-    <Tldraw />
+    <Tldraw inferDarkMode/>
     </div>
   )
 }
