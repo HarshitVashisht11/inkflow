@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Inkflow
 
-## Getting Started
+Inkflow is an innovative whiteboard application designed for seamless collaboration and advanced visualizations. It leverages Convex, Lerk, TypeScript, Next.js, Shacdn, Tailwind CSS, and Excalidraw to provide a rich user experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Whiteboard Drawing:** Create and customize diagrams, flowcharts, and sketches effortlessly.
+- **Convex Integration:** Utilize Convex as a real time database.
+- **Clerk Support:** Use clerk for user auth.
+- **TypeScript Powered:** Enhance code quality and maintainability with TypeScript's strong typing.
+- **Next.js Framework:** Benefit from server-side rendering, routing, and API integration provided by Next.js.
+- **Shacdn Styling:** Utilize Shacdn's responsive design and utility classes for a modern UI.
+- **Tailwind CSS:** Customize the look and feel of Inkflow with Tailwind CSS's utility-first approach.
+- **Excalidraw Integration:** Seamlessly embed Excalidraw diagrams for enhanced visualizations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To install and run Inkflow locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/inkflow.git
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   cd inkflow
+   npm install
+   ```
+3. Create '.env' file and paste your environment keys:
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Start the convex server:
+   ```bash
+   npx convex dev
+   ```
+4. Open your browser and navigate to `http://localhost:3000` to access Inkflow.
 
-To learn more about Next.js, take a look at the following resources:
+## Collaborative Features (Coming Soon)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Inkflow's collaborative features enable teams to work together efficiently:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Real-time Updates:** Changes made by one user are instantly reflected across all connected devices.
+- **Chat Integration:** Communicate with team members using the built-in chat functionality.
+- **User Cursors:** See where collaborators are working on the canvas with real-time cursor positions.
 
-## Deploy on Vercel
+## Templates (Coming Soon)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We're actively working on adding template support to Inkflow. Stay tuned for a variety of pre-designed templates for common use cases such as:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Mind Maps
+- User Interface Mockups
+- Network Diagrams
+- Project Timelines
+- And more!
+
+## Contributing
+
+We welcome contributions from the community! If you'd like to contribute to Inkflow, please follow these guidelines:
+
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to customize this README further with specific installation instructions, usage examples, or any additional features you'd like to highlight!
