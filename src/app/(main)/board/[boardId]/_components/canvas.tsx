@@ -1,12 +1,11 @@
-import React from 'react'
-import { Tldraw } from 'tldraw'
-import 'tldraw/tldraw.css'
-const Canvas = () => {
-  return (
-    <div style={{ position: 'fixed', inset: 0 }}>
-    <Tldraw inferDarkMode/>
-    </div>
-  )
+import dynamic from "next/dynamic";
+const Excalidraw = dynamic(
+  async () => (await import("@excalidraw/excalidraw")).Excalidraw,
+  {
+    ssr: false,
+  },
+);
+export default function Canvas() {
+  return <Excalidraw />;
 }
 
-export default Canvas
