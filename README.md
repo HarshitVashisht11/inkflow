@@ -27,7 +27,7 @@ To install and run Inkflow locally, follow these steps:
    cd inkflow
    npm install
    ```
-3. Create '.env' file and paste your environment keys:
+3. Create `.env` file and paste your environment keys:
 3. Start the development server:
    ```bash
    npm run dev
@@ -66,8 +66,4 @@ We welcome contributions from the community! If you'd like to contribute to Inkf
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README further with specific installation instructions, usage examples, or any additional features you'd like to highlight!
+This project is licensed under the MIT License 
