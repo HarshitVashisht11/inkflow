@@ -1,5 +1,5 @@
 "use client"
-import  Canvas  from "./_components/canvas";
+import Canvas from "./_components/canvas";
 
 interface BoardIdPageProps {
   params: {
@@ -9,9 +9,11 @@ interface BoardIdPageProps {
 
 const BoardIdPage = ({
   params,
-}:BoardIdPageProps) => {
+}: BoardIdPageProps) => {
+  const { boardId } = params;
+  
   return (
-      <Canvas/>
+    <Canvas boardId={boardId} />
   );
 };
 
