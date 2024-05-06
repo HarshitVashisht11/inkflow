@@ -11,7 +11,6 @@ Inkflow is an innovative whiteboard application designed for seamless collaborat
 - **Next.js Framework:** Benefit from server-side rendering, routing, and API integration provided by Next.js.
 - **Shacdn Styling:** Utilize Shacdn's responsive design and utility classes for a modern UI.
 - **Tailwind CSS:** Customize the look and feel of Inkflow with Tailwind CSS's utility-first approach.
-- **Excalidraw Integration:** Seamlessly embed Excalidraw diagrams for enhanced visualizations.
 
 ## Installation
 
