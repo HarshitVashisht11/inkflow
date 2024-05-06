@@ -1,6 +1,6 @@
 # Inkflow
 
-Inkflow is an innovative whiteboard application designed for seamless collaboration and advanced visualizations. It leverages Convex, Lerk, TypeScript, Next.js, Shacdn, Tailwind CSS, and Excalidraw to provide a rich user experience.
+Inkflow is an innovative whiteboard application designed for seamless collaboration and advanced visualizations. It leverages Convex, Lerk, TypeScript, Next.js, Shacdn and Tailwind CSS, to provide a rich user experience.
 
 ## Features
 
