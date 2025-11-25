@@ -1,5 +1,8 @@
 # Inkflow
 
+![ink](https://github.com/user-attachments/assets/6abf035a-7038-406d-b1d5-53689f82dac4)
+
+
 Inkflow is an innovative whiteboard application designed for seamless collaboration and advanced visualizations. It leverages Convex, Lerk, TypeScript, Next.js, Shacdn and Tailwind CSS, to provide a rich user experience.
 
 ## Features
@@ -37,23 +40,12 @@ To install and run Inkflow locally, follow these steps:
    ```
 4. Open your browser and navigate to `http://localhost:3000` to access Inkflow.
 
-## Collaborative Features (Coming Soon)
+## Collaborative Features
 
 Inkflow's collaborative features enable teams to work together efficiently:
 
 - **Real-time Updates:** Changes made by one user are instantly reflected across all connected devices.
-- **Chat Integration:** Communicate with team members using the built-in chat functionality.
 - **User Cursors:** See where collaborators are working on the canvas with real-time cursor positions.
-
-## Templates (Coming Soon)
-
-We're actively working on adding template support to Inkflow. Stay tuned for a variety of pre-designed templates for common use cases such as:
-
-- Mind Maps
-- User Interface Mockups
-- Network Diagrams
-- Project Timelines
-- And more!
 
 ## Contributing
 
