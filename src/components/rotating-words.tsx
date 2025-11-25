@@ -6,7 +6,7 @@ type Props = {
 }
 
 const RotatingWords: React.FC<Props> = ({ className = '' }) => {
-  const words = ['collaborative', 'design', 'brainstorming', 'planning', 'prototyping']
+  const words = ['designing', 'brainstorming', 'planning', 'prototyping']
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [currentText, setCurrentText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
