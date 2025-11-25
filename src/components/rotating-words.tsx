@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useEffect, useState } from 'react'
 
 type Props = {
@@ -8,16 +7,42 @@ type Props = {
 
 const RotatingWords: React.FC<Props> = ({ className = '' }) => {
   const words = ['collaborative', 'design', 'brainstorming', 'planning', 'prototyping']
-  const [index, setIndex] = useState(0)
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const [currentText, setCurrentText] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [typingSpeed, setTypingSpeed] = useState(150)
 
   useEffect(() => {
-    const t = setInterval(() => setIndex((i) => (i + 1) % words.length), 2200)
-    return () => clearInterval(t)
-  }, [])
+    const word = words[currentWordIndex % words.length]
+    
+    const timer = setTimeout(() => {
+      if (isDeleting) {
+        setCurrentText(word.substring(0, currentText.length - 1))
+        setTypingSpeed(50)
+      } else {
+        setCurrentText(word.substring(0, currentText.length + 1))
+        setTypingSpeed(150)
+      }
+
+      if (!isDeleting && currentText === word) {
+        // Word completed, wait before deleting
+        setTypingSpeed(2000)
+        setIsDeleting(true)
+      } else if (isDeleting && currentText === '') {
+        // Deletion completed, move to next word
+        setIsDeleting(false)
+        setCurrentWordIndex((prev) => prev + 1)
+        setTypingSpeed(150)
+      }
+    }, typingSpeed)
+
+    return () => clearTimeout(timer)
+  }, [currentText, isDeleting, currentWordIndex, typingSpeed, words])
 
   return (
-    <span key={index} className={`inline-block ${className} transition-opacity duration-500 animate-in fade-in`}>
-      {words[index]}
+    <span className={`${className} inline-flex items-center`}>
+      {currentText}
+      <span className="ml-1 w-[2px] h-[1em] bg-emerald-500 animate-pulse" />
     </span>
   )
 }

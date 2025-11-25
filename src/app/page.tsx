@@ -13,11 +13,11 @@ export default function Home() {
       
       {/* Background Grid */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-30 dark:opacity-20" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-30" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-b from-emerald-500/20 via-emerald-500/10 to-transparent blur-[120px] -z-10" />
       </div>
 
-      <main className="relative z-10 pt-32 pb-16 px-4 md:px-6 flex flex-col items-center justify-center text-center max-w-6xl mx-auto">
+      <main className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center max-w-6xl mx-auto px-4 md:px-6 pt-20 pb-20">
         
         {/* Pill Label */}
         <div className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full border border-border bg-card py-1 pr-4 pl-3 shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -33,7 +33,7 @@ export default function Home() {
         {/* Hero Heading */}
         <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-8 duration-700 leading-tight">
           Your all-in-one <br className="hidden md:block" />
-          creative platform <br className="hidden md:block" />
+          creative platform for <br className="hidden md:block" />
           <RotatingWords className="font-serif italic font-normal text-emerald-500" />
         </h1>
 
@@ -45,19 +45,20 @@ export default function Home() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-20 animate-in fade-in slide-in-from-bottom-16 duration-1000">
-          <Link href="/sign-up">
+          <Link href="/dashboard">
             <Button size="lg" className="w-full sm:w-auto gap-2 bg-emerald-500 hover:bg-emerald-600 text-white border-none h-14 px-10 text-base font-semibold shadow-xl shadow-emerald-500/30 hover:shadow-2xl hover:shadow-emerald-500/40 hover:scale-105 transition-all duration-200">
               Get Started <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>
-          <Link href="/sign-in">
+          <Link href="/dashboard">
             <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 text-base font-semibold border-2 hover:bg-emerald-500/5 hover:border-emerald-500 hover:text-emerald-500 transition-all duration-200">
               Sign In
             </Button>
           </Link>
         </div>
-
-
+        
+        {/* Gradient Dissolve */}
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
       </main>
 
       {/* Features Section */}

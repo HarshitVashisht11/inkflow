@@ -78,6 +78,11 @@ export const BoardCard = ({
             side="right"
           >
             <button
+              type="button"
+              onClick={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+              }}
               className="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity px-3 py-2 outline-none"
             >
               <MoreHorizontal

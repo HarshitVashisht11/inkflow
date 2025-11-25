@@ -35,18 +35,24 @@ export const Actions = ({
   const { onOpen } = useRenameModal();
   const { mutate, pending } = useApiMutation(api.board.remove);
 
-  const onCopyLink = () => {
-    navigator.clipboard.writeText(
-      `${window.location.origin}/board/${id}`,
-    )
-      .then(() => toast.success("Link copied"))
-      .catch(() => toast.error("Failed to copy link"))
+  const onCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(
+        `${window.location.origin}/board/${id}`,
+      );
+      toast.success("Link copied to clipboard!");
+    } catch (error) {
+      toast.error("Failed to copy link");
+    }
   };
 
-  const onDelete = () => {
-    mutate({ id })
-      .then(() => toast.success("Board deleted"))
-      .catch(() => toast.error("Failed to delete board"));
+  const onDelete = async () => {
+    try {
+      await mutate({ id });
+      toast.success("Board deleted");
+    } catch (error) {
+      toast.error("Failed to delete board");
+    }
   };
 
   return (

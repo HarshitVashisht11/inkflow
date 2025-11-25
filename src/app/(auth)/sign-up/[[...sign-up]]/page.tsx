@@ -23,10 +23,19 @@ export default function Page() {
               socialButtonsBlockButton: "border-2 border-border hover:bg-secondary transition-colors",
               socialButtonsBlockButtonText: "text-foreground font-medium",
               formButtonPrimary: "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 transition-all",
-              formFieldInput: "border-2 border-border focus:border-emerald-500 bg-background text-foreground",
+              formFieldInput: "border-2 border-border focus:border-emerald-500 bg-background text-foreground placeholder:text-muted-foreground",
               footerActionLink: "text-emerald-500 hover:text-emerald-600 font-medium",
               identityPreviewText: "text-foreground",
               formFieldLabel: "text-foreground font-medium",
+              formFieldInputShowPasswordButton: "text-muted-foreground hover:text-foreground",
+              dividerLine: "bg-border",
+              dividerText: "text-muted-foreground",
+              formHeaderTitle: "text-foreground",
+              formHeaderSubtitle: "text-muted-foreground",
+              otpCodeFieldInput: "border-2 border-border bg-background text-foreground",
+              formResendCodeLink: "text-emerald-500 hover:text-emerald-600",
+              footerActionText: "text-muted-foreground",
+              identityPreviewEditButton: "text-emerald-500 hover:text-emerald-600",
             }
           }}
         />
